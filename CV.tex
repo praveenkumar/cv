@@ -1,0 +1,322 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info.
+\newcommand{\CVAuthor}{Praveen Kumar}
+\newcommand{\CVTitle}{Praveen Kumar's CV}
+\newcommand{\CVNote}{CV compiled on {\today}}
+\newcommand{\CVWebpage}{https://fedoraproject.org/wiki/User:Kumarpraveen}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+\href{https://www.google.com/maps/place/Pune+India}
+{DSK Sunderban, Amanora, Pune 411028, India}
+\par
+\href{mailto:kumarpraveen.nitdgp@gmail.com}
+{kumarpraveen.nitdgp@gmail.com}
+\,\SubBulletSymbol\,
++91\,7276249468
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\url{\CVWebpage}}
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%
+%% Profile %%
+%%%%%%%%%%%%%
+\Section
+{profile}
+{profile}
+{PDF:profile}
+
+\Entry
+\begin{Detail}
+I am an experienced developer, looking for new exciting challenges. I have worked on various Linux products and projects over the past 7 years on different levels. I am eager to learn new technologies and a quick-learner.
+\end{Detail}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\href{https://www.nitdgp.ac.in/}
+{\textbf{National Institute of Technology}},
+Durgapur, West Bengal, India
+
+\Gap
+\BulletItem
+B.Tech in Information Technology
+\href{https://www.nitdgp.ac.in/department/CS}
+{Information Technology}
+\hfill
+\DatestampYMD{2007}{07}{15} --
+\DatestampYMD{2011}{06}{15}
+\begin{Detail}
+\SubBulletItem
+Thesis:
+\href{https://bitbucket.org/kumarpraveen/lsync}
+{A file synchronizer for Linux.}
+\SubBulletItem
+Adviser:
+\href{https://www.nitdgp.ac.in/faculty/fcb853d8-bbdb-4327-a31f-1eda672da992}
+{Ass. Prof.~Animesh~Dutta}
+\SubBulletItem
+Focus:
+Networking, database, Application development
+\SubBulletItem
+Cumulative GPA: 8.4 / 10.0
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Work Experience: %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Work Experience}
+{Work Experience}
+{PDF:Work Experience}
+
+\Entry
+\href{https://redhat.com}
+{\textbf{Red Hat }}
+\hfill
+\DatestampY{2013} --
+Present
+
+\BulletItem
+\href{https://github.com/code-ready/crc}
+{{CodeReady Container}}, a tool that helps to run OpenShift-4.x locally by running a single-node \newline OpenShift cluster inside a VM (Platform independent)
+\hfill
+\DatestampY{2018} --
+present
+
+\BulletItem
+\href{https://github.com/minishift/minishift}
+{{Minishift}}, a tool that helps to run OpenShift-3.x locally by running a single-node \newline OpenShift cluster inside a VM (Platform independent)
+\hfill
+\DatestampY{2017} --
+2018
+
+\BulletItem
+\href{https://github.com/projectatomic/adb-atomic-developer-bundle}
+{{Atomic Developer Bundle}},  a prepackaged development environment filled with \newline production-grade, pre-configured tools, that makes container developers' lives easier.
+\hfill
+\DatestampY{2016} --
+2017
+
+\BulletItem
+Third party vendor software and plugin certification and evaluation process for \newline RHEL OpenStack's Object storage (swift).
+\hfill
+\DatestampY{2015} --
+2016
+
+\BulletItem
+CI/CD, Enabled team to use CI/CD methodology across the projects and defined \newline e2e pipelines. Used Ansible and Jenkins Job Builder to provide infra as code solution.
+\hfill
+\DatestampY{2013} --
+2014
+
+\Gap
+\Gap
+\Gap
+\Entry
+\href{https://www.hpe.com}
+{\textbf{Hewlett Packard Enterprise}}
+\hfill
+\DatestampY{2011} --
+2013
+
+\BulletItem
+Automation of \href{https://www.hpe.com/us/en/product-catalog/detail/pip.5182020.html}{HPE Smart Update Manager} Installation guide.
+\hfill
+\DatestampY{2011} --
+2013
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\Section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+\Entry
+golang,
+python,
+Containers,
+Continue Integration,
+Linux,
+Virtualization
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% CAMPUS ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Campus Activities}
+{Campus Activities}
+{PDF:CampusActivities}
+
+\Entry
+\href{http://nitdgplug.org/}
+{\textbf{Volunteer to Linux User Group}},
+NIT Durgapur
+
+\Gap
+\BulletItem
+Vice President
+\hfill
+\DatestampYMD{2010}{06}{15} --
+\DatestampYMD{2011}{02}{20}
+\begin{Detail}
+\SubBulletItem
+Spread awareness about Open Source Software.
+\SubBulletItem
+Conducting workshop and Talks on different topics around Linux
+\SubBulletItem
+Part of organization committee for Mukti (Open-Source Techfest)
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Other Projects/Achievements: %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Other Work\newline
+Experience}
+{Other Work Experience}
+{PDF:OtherWorkExperience}
+
+\Entry
+\href{https://getfedora.org/}
+{\textbf{Fedora Community}},
+Remote
+
+\Gap
+\BulletItem
+Package Maintainer
+\hfill
+\DatestampYMD{2010}{8}{8} --
+present
+\begin{Detail}
+\SubBulletItem
+Maintain around 35 rpm packages for Fedora offical repo.
+\SubBulletItem
+Reviewed packages on Fedora Bugzilla.
+\SubBulletItem
+https://src.fedoraproject.org/user/kumarpraveen/projects
+\end{Detail}
+
+%%%%%%%%%%%%%%%
+%% LANGUAGES %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Languages}
+{Languages}
+{PDF:Languages}
+
+\BulletItem
+Hindi: Native language.
+
+\Gap
+\BulletItem
+English: Fluent (speaking, reading, writing).
+
+%%%%%%%%%%%%%%%
+%% INTERESTS %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Interests}
+{Interests}
+{PDF:Interests}
+
+\Entry
+Running,
+Cycling.
+
+%%%%%%%%%%%%%%%%
+%% REFERENCES %%
+%%%%%%%%%%%%%%%%
+
+\Section
+{References}
+{References}
+{PDF:References}
+
+\BulletItem
+\textbf{Professor Animesh Dutta}
+\newline
+Asst. Professor of Computer Science and Engineering
+\newline
+National Institute of Durgapur
+\newline
+West Bengal, India
+\newline
+\href{mailto:animeshrec@gmail.com}
+{animeshrec@gmail.com}
+\,\SubBulletSymbol\,
++91\,94743-64241
+
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+
+\UseNoteFont%
+\null\hfill%
+[\textit{\CVNote}]
+\end{Body}
+\end{document}
